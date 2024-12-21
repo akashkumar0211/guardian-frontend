@@ -9,12 +9,15 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
-        "dark-blue": "#04121E", 
-      },
+        'custom-error': '#d44849',
+        "dark-blue": "#04121E",
+        "critical": "#f44336", // Red
+        "high": "#ff9800", // Orange
+        "medium": "#ffc107", // Yellow
+        "low": "#2196f3",
+      }
     },
   },
-  plugins: [],
+  plugins: []
 };
 export default config;

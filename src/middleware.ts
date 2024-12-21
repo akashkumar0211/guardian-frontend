@@ -13,7 +13,7 @@ export async function middleware(request: NextRequest) {
   if (!session) {
     if (request.nextUrl.pathname !== "/signin") {
       url.pathname = "/signin";
-      // url.searchParams.set("redirect", `${baseUrl}${request.nextUrl.pathname}${request.nextUrl.search}`);
+      url.searchParams.set("redirect", `${baseUrl}${request.nextUrl.pathname}${request.nextUrl.search}`);
       return NextResponse.redirect(url);
     }
   } else {
@@ -27,5 +27,5 @@ export async function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ["/((?!api|_next/static|_next/image|favicon.ico).*)"],
+  matcher: ['/((?!api|_next/static|_next/image|favicon.ico|.*\\.svg|.*\\.png).*)/'],
 };

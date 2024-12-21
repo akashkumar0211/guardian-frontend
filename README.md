@@ -1,36 +1,66 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Guardian ASPM Tool Frontend
 
-## Getting Started
+This repository contains the frontend code for the Application Security Posture Management (ASPM) tool. The ASPM tool is designed to provide a comprehensive view of vulnerabilities found in applications, including those detected by:
 
-First, run the development server:
+- **SAST (Static Application Security Testing)**
+- **DAST (Dynamic Application Security Testing)**
+- **IaC (Infrastructure as Code) scanning**
+- **Container security analysis**
+- **SCA (Software Composition Analysis)**
+
+## Features
+
+- **Dashboard**: Visualize and track vulnerabilities across different scanning types.
+- **Filters and Search**: Easily find specific vulnerabilities or focus on particular areas of interest.
+- **Detailed Reporting**: View detailed reports for individual scans and vulnerabilities.
+
+---
+
+## Setup
+
+### Clone the Repository
+To get started, clone this repository to your local machine using Git:
+
+```bash
+git clone https://github.com/bootlabs-solutions/Guardian_Frontend.git
+```
+
+### Install Dependencies
+Navigate to the project directory and install the necessary dependencies:
+
+```bash
+cd Guardian_Frontend
+npm install
+```
+
+### Environment Configuration
+Export the following environment variable to connect the frontend to the backend service:
+
+```bash
+export NEXT_PUBLIC_BACKEND_DOMAIN=http://localhost:8087
+```
+
+### Start the Development Server
+Run the application locally using:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The application will be accessible at [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Contribution
+Contributions are welcome! Please fork the repository, make your changes, and submit a pull request. Ensure that your code follows the project's coding standards.
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## License
+This project is licensed under the MIT License. See the LICENSE file for more details.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Contact
+For questions or support, please reach out to the Guardian Frontend team at [support@bootlabs.com](mailto:support@bootlabs.com).
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.

@@ -22,14 +22,14 @@ This repository contains the frontend code for the Application Security Posture 
 To get started, clone this repository to your local machine using Git:
 
 ```bash
-git clone https://github.com/bootlabs-solutions/Guardian_Frontend.git
+https://github.com/akashkumar0211/guardian-frontend.git
 ```
 
 ### Install Dependencies
 Navigate to the project directory and install the necessary dependencies:
 
 ```bash
-cd Guardian_Frontend
+cd guardian-frontend
 npm install
 ```
 
